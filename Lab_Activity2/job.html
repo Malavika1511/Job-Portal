@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div {
+  background-image: url('0.jpg');
+}
+body {
+  color: black;
+  background-color : white;
+}
+
+h1 {
+  color:green;
+}
+
+h5 {
+  color : red;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("jobbb.jpg");
+  height: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+  </div>
+</div>
+
+
+<div>
+<br>
+<center><h1> ONLINE JOB BOARD </h1></center>
+<h5>DESIGNATION</h5> <p id="demo"></p>
+<h5>COMPANY</h5> <p id ="demo1">COMPANY</p>
+<h5>NODE NAME OF THE FIRST CANDIDATE</h5> <p id="demo2"></p>
+<h5>AVAILABLE COMPANIES</h5> <p id = "demo3"></p>
+</div>
+
+<script>
+var text, parser, xmlDoc;
+var text1 = "";
+
+text = "<onlinejobboard><job>" +
+"<job>"+   
+  "<company>Amazon</company>"+
+  "<designation>Full stack developer</designation>"+
+  "<salary>2000000-2400000 PA</salary>"+
+  "<phone> 9845612475 </phone>"+
+  "<city>Chennai</city>"+
+"</job>"+
+"<job>"+   
+  "<company>HP</company>"+
+  "<designation>Network analyst</designation>"+
+  "<salary>1700000 PA</salary>"+
+  "<phone>8989012475</phone>"+
+  "<city>Bangalore</city>"+
+"</job>"+
+"<job>"+   
+  "<company>Adobe</company>"+
+  "<designation>Project manager</designation>"+
+  "<salary>1500000 PA</salary>"+
+  "<phone>7645212475</phone>"+
+  "<city>Mumbai</city>"+
+"</job>"+
+"<job>"+   
+  "<company>FLIPKART</company>"+
+  "<designation>Network Administrator</designation>"+
+  "<salary>1900000 PA</salary>"+
+  "<phone>984561292</phone>"+
+  "<city>Chennai</city>"+
+"</job>"+
+"</job></onlinejobboard>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("designation")[0].childNodes[0].nodeValue;
+document.getElementById("demo1").innerHTML =
+xmlDoc.getElementsByTagName("company")[0].childNodes[0].nodeValue;
+document.getElementById("demo2").innerHTML =
+xmlDoc.getElementsByTagName("phone")[0].childNodes[0].nodeValue;
+text1 = text1 + xmlDoc.getElementsByTagName("company")[0].childNodes[0].nodeValue + "<br>" +
+xmlDoc.getElementsByTagName("company")[1].childNodes[0].nodeValue + "<br>" +
+xmlDoc.getElementsByTagName("company")[2].childNodes[0].nodeValue + "<br>" +
+xmlDoc.getElementsByTagName("company")[3].childNodes[0].nodeValue + "<br>" ;
+
+document.getElementById("demo3").innerHTML = text1;
+
+</script>
+<br>
+<br>
+<br>
+</body>
+</html>
