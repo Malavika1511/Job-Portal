@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT onlinejobboard (candidate+)>
+<!ELEMENT candidate (name,age,qualification,designation)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT designation (#PCDATA)>
+<!ATTLIST candidate sno ID #REQUIRED>

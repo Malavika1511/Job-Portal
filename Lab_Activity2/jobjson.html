@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+ color : black;
+ background-image: url('0.jpg');
+ }
+h2 {
+color: green;
+}
+</style>
+</head>
+<body>
+
+<h1> JOB DESIGNATIONS AVAILABLE</h1>
+
+<br>
+<br>
+<br>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var  i, x = "";
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    for (i in myObj.job) {
+  x += "<h2>" + myObj.job[i].designation + "</h2>";
+}
+
+document.getElementById("demo").innerHTML = x;
+var text = JSON.stringify(myObj, function (key, value) {
+  if (key == "company") {
+    return value.toUpperCase();
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo1").innerHTML = text;
+  }
+};
+xmlhttp.open("GET", "job.txt", true);
+xmlhttp.send();
+
+</script>
+
+</body>
+</html>

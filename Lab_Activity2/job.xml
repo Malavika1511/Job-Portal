@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="job.xsl" type="text/xsl" ?>
+<onlinejobboard>
+<job jid="2001">
+  <company>Amazon</company>
+  <designation>Full stack developer</designation>
+  <salary>2000000-2400000 PA</salary>
+  <phone> 9845612475 </phone>
+  <city>Chennai</city>
+</job>
+<job jid="2002">
+  <company>HP</company>
+  <designation>Network analyst</designation>
+  <salary>1700000 PA</salary>
+  <phone>8989012475</phone>
+  <city>Bangalore</city>
+</job>
+<job jid="2003">
+  <company>Adobe</company>
+  <designation>Project manager</designation>
+  <salary>1500000 PA</salary>
+  <phone>7645212475</phone>
+  <city>Mumbai</city>
+</job>
+<job jid="2004">
+  <company>FLIPKART</company>
+  <designation>Network Administrator</designation>
+  <salary>1900000 PA</salary>
+  <phone>984561292</phone>
+  <city>Chennai</city>
+</job>
+</onlinejobboard>

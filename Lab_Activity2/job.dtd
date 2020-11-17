@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT onlinejobboard (job+)>
+<!ELEMENT job (company,designation,salary,phone,city)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT designation (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ATTLIST job jid ID #REQUIRED>

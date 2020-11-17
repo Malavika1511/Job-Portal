@@ -1,0 +1,39 @@
+
+{
+    "jobboard": {
+      "job": [
+        {
+          "@jid": "2001",
+          "company": "Amazon",
+          "designation": "Full stack developer",
+          "salary": "2000000-2400000 PA",
+          "phone": "9845612475",
+          "city": "Chennai"
+        },
+        {
+          "@jid": "2002",
+          "company": "HP",
+          "designation": "Network analyst",
+          "salary": "1700000 PA",
+          "phone": "8989012475",
+          "city": "Bangalore"
+        },
+        {
+          "@jid": "2003",
+          "company": "Adobe",
+          "designation": "Project manager",
+          "salary": "1500000 PA",
+          "phone": "7645212475",
+          "city": "Mumbai"
+        },
+        {
+          "@jid": "2004",
+          "company": "FLIPKART",
+          "designation": "Network Administrator",
+          "salary": "1900000 PA",
+          "phone": "984561292",
+          "city": "Chennai"
+        }
+      ]
+    }
+  }

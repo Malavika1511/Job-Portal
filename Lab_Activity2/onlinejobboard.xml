@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="onlinejobboard.xsl" type="text/xsl" ?>
+<onlinejobboard>
+<candidate sno="C1">
+  <name>Priya</name>
+  <age>21</age>
+  <qualification>BTech</qualification>
+  <designation>Full stack developer</designation>
+</candidate>
+<candidate sno="C2">
+  <name>Sona</name>
+  <age>23</age>
+  <qualification>BTech</qualification>
+  <designation>Network administrator</designation>
+</candidate>
+<candidate sno="C3">
+  <name>Malavika</name>
+  <age>22</age>
+  <qualification>BE</qualification>
+  <designation>Network Analyst</designation>
+</candidate>
+<candidate sno="C4">
+  <name>Sita</name>
+  <age>28</age>
+  <qualification>BE</qualification>
+  <designation>Software developer</designation>
+</candidate>
+</onlinejobboard>

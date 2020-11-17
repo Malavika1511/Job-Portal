@@ -1,0 +1,31 @@
+{
+    "onlinejobboard": {
+      "candidate": [
+        {
+            "@sno": "C1",
+            "name": "Priya", 
+            "age": "21", 
+            "qualification": "BTech", 
+            "designation": "Full Stack developer"
+        },
+        {
+            "name": "Sabari", 
+            "age": "23", 
+            "qualification": "BTech", 
+            "designation": "Network administrator"
+        },
+        {
+            "name": "Ponmani", 
+            "age": "27", 
+            "qualification": "BE", 
+            "designation": "Network analyst"
+        },
+        {
+            "name": "Roobini", 
+            "age": "22", 
+            "qualification": "BE", 
+            "designation": "Software developer"
+        }
+      ]
+    }
+  }
