@@ -1,0 +1,26 @@
+{
+      "candidate1": {
+"id": "ID100",
+"name": "Priya",
+"phone": "7373061242",
+"email": "kp.sabaripriya@gmail.com",
+"qualification": "BTech IT"
+        },
+        "candidate2":{
+"id": "ID200",
+"name": "Sona",
+"phone": "9237594558",
+"email": "sona@gmail.com",
+"qualification": "BTech IT"
+           
+          },
+          "candidate3":{
+"id":"ID300",
+"name": "Malavika",
+"phone": "9253163536",
+"email": "malavika10@gmail.com",
+"qualification": "BTech IT"
+           
+          }
+         
+  }
