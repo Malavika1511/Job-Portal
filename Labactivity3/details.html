@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>NICHE JOB BOARD WEBSITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src= 
+    "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> 
+        </script>
+		
+
+</head>
+
+<style>
+div1 {background-color: lightgrey; padding:10px; display:block; }
+</style>
+
+<body>
+
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme"> NICHE JOB BOARD </h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#myHeader" class="w3-bar-item w3-button">About Us</a>
+  <a href="#review" class="w3-bar-item w3-button"> Company Review</a>
+  <a href="#jobs" class="w3-bar-item w3-button">Jobs on Recruitment</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h3> YOUR NICHE JOB BOARD WEBSITE </h3>
+  <img class="mySlides w3-animate-opacity" src="flexjoblogo.jpg" >
+  <h3 class="w3-xxxlarge w3-animate-bottom"></h3>
+  </div>
+</header>
+<br><br><br>
+
+        <h2>Candidate Details</h2>    
+        <form name = "form1" action="post.php" method = "post" enctype = "multipart/form-data" >    
+            <div1 class = "container">    
+                <div1 class = "candidate_group">    
+                    <label>Candidate ID:</label>    
+                    <input type = "text" name = "id" value = "" required/>    
+                </div1>    
+                <div1 class = "candidate_group">    
+                    <label>Candidate Name:</label>    
+                    <input type = "text" name = "name" value = "" required />    
+                </div1>    
+                <div1 class = "candidate_group">    
+                    <label>Phone Number:</label>    
+                    <input type = "text" name = "phone" value = "" required/>    
+                </div1> 
+                <div1 class = "candidate_group">    
+                    <label>Email Address:</label>    
+                    <input type = "text" name = "email" value = "" required/>    
+                </div1>     
+                <div1 class = "candidate_group">    
+                    <label>Qualification</label>    
+                    <input type = "text" name = "qualif" value = "" required/>    
+                </div1>  
+                
+            </div1>
+            <input type="checkbox" id="confirm" name="confirm" value="">
+            <label1 for="candidate1"> Confirm Submission ?</label1>
+            <br>
+            <br>
+            <input type = "submit" name = "submit"/>          
+        </form>    
+    </body>    
+</html>    
